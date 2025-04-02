@@ -16,6 +16,7 @@
   <link href="{{URL_CSS}}fontawesome.min.css" rel="stylesheet" type="text/css" />
   <link href="{{URL_CSS}}normalize.css" rel="stylesheet" type="text/css" />
   <link href="{{URL_CSS}}style.css" rel="stylesheet" type="text/css" />
+  @stack('css')
 </head>
 
 <body>
