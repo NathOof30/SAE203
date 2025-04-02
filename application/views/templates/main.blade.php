@@ -20,14 +20,14 @@
 
 <body>
   <header class="container">
-    <div>
+    <div class="header_text">
       <a href="{{BASE_URL}}">
         <h1>La vallée</h1>
       </a>
       <span>Restaurant associatif</span>
       <a class="button" href="{{BASE_URL}}?page=inscription">Nous rejoindre</a>
     </div>
-    <div class="image">
+    <div class="header_image">
       <img src="{{URL_IMG}}./interieur.jpg" alt="test">
     </div>
     @if(!isset($_SESSION['adherent']))

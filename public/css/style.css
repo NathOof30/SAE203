@@ -40,10 +40,27 @@
     text-align: center;
 }
 
-body{
+header {
     background-color: red;
+    display: flex;
+    max-height: 600px;
 }
 
-header {
-    border: 2px solid red;
+header .header_text{
+    flex-basis: 30%;
+}
+header .header_image{
+    flex-basis: 70%;
+}
+
+header .header_image img{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+header #login{
+    position: absolute;
 }
