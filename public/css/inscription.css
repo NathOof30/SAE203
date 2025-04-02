@@ -1,0 +1,11 @@
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: rgb(51,69,81);
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(51,69,81);
+}
