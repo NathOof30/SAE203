@@ -1,0 +1,40 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**** Affichage des erreurs *****/
+.log{
+    background-color: white;
+    color: rgb(51,69,81);
+    padding: 4rem;
+}
+
+.log h1 {
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+.log h2 {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.log p,
+.log pre {
+    font-size: 1.2rem;
+}
+
+#info {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    font-size: 3rem;
+    padding: 1em 2em;
+    background-color:  white; 
+    color: rgb(51,69,81);
+    text-align: center;
+}
