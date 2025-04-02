@@ -40,8 +40,10 @@
     text-align: center;
 }
 
+/* ____________Header____________ */
+
 header {
-    background-color: red;
+    background-color:rgb(185,157,125);
     display: flex;
     max-height: 600px;
 }
@@ -55,7 +57,7 @@ header .header_image{
 
 header .header_image img{
     width: 100%;
-    height: auto;
+    height: 100%;
     max-height: 600px;
     object-fit: cover;
     object-position: center;
@@ -63,4 +65,279 @@ header .header_image img{
 
 header #login{
     position: absolute;
+}
+
+header .header_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+header .header_text .logo{
+    text-decoration: none;
+    font-family: "Meow Script", sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    margin: 15% 0;
+}
+
+header .header_text span{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 5% 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header .button{
+    background-color: rgb(51, 69, 81);
+    text-decoration: none;
+    padding: 5px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 5% 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header #login{
+    color: white;
+    font-size: 2rem;
+    margin: 20px 20px;
+}
+
+/* ____________FOOTER____________ */
+
+footer{
+    background-color: rgb(51, 69, 81);
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+footer .container div{
+    flex-basis: 20%;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+}
+
+footer .container div span{
+    color: rgb(185,157,125);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+}
+
+footer .container div p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+footer .container div h2{
+    color: white;
+    text-decoration: none;
+    font-family: "meow script", sans-serif;
+    font-size: 2rem;
+}
+
+footer p{
+    justify-self: center;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ____________CONTENT____________ */
+/* ____________ABOUT + FORMULE____________ */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(51, 69, 81);
+    color: white;
+    padding: 6% 5%;
+    font-family: "poppins", sans-serif;
+}
+
+.about .formule{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 70%;
+}
+
+.about .formule div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .formule div i{
+    font-size: 2.5rem;
+    color: rgb(185,157,125);
+    margin : 10px 0 ;
+}
+
+.about .formule div p{
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+.about .formule div h2{
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.about .about_text{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.about .about_text h2{
+    text-align: right;
+}
+.about .about_text p{
+    text-align: right;
+    font-weight: lighter;
+}
+.about .about_text div a{
+    text-decoration: none;
+    background-color: rgb(185,157,125);
+    color: rgb(51, 69, 81);
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.about .about_text div{
+    padding: 20px 0;
+}
+
+/*____________MENU DU JOUR________*/
+
+.today_menu {
+    background-color: rgb(185,157,125);
+    display: flex;
+    padding: 2% 5%;
+}
+
+.today_menu .today_text{
+    flex-basis: 50%;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+
+}
+
+.today_menu .today_text h2{
+    font-weight: normal;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.today_menu .today_text h3{
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.today_menu .today_text p{
+    font-family: "meow script", sans-serif;
+    font-size: 3rem;
+}
+
+.today_menu .today_text .today_bouton{
+    margin: 30px 0; 
+}
+
+.today_menu .today_text .today_bouton a{
+    font-weight: normal;
+    text-decoration: none;
+    background-color: rgb(51, 69, 81);
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.today_menu .today_image img{
+    width: 45%;
+    height: 550px;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+.today_image{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.today_menu .today_image #img1{
+    position: relative;
+    top : -60px;
+}
+
+.today_menu .today_image #img2{
+    position: relative;
+    bottom: -20px;
+}
+
+/*____________PLAT aleatoire________*/
+
+.alea_text{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.alea_text h2{
+    color: rgb(51, 69, 81);
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+.alea_text div a{
+    background-color: rgb(51, 69, 81);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+}
+
+.plat_image{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plat_image img{
+    width: 33.33%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
 }

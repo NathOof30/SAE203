@@ -21,7 +21,7 @@
 <body>
   <header class="container">
     <div class="header_text">
-      <a href="{{BASE_URL}}">
+      <a href="{{BASE_URL}}" class="logo">
         <h1>La vallée</h1>
       </a>
       <span>Restaurant associatif</span>
@@ -70,7 +70,6 @@
         <p>email : lavallee@wanadoo.fr</p>
       </div>
 
-    </div>
     </div>
     <p class="container">&copy; MMI Création 2025
       -- <a href="#">Mentions légales</a>
