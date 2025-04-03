@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+body{
+    max-width: 1100px;
+    margin: 0  auto;
+    background-color: rgb(14, 6, 6);
+    font-family: "Poppins", sans-serif;
+}
+
 /**** Affichage des erreurs *****/
 .log {
     background-color: white;
@@ -49,10 +56,10 @@ header {
 }
 
 header .header_text{
-    flex-basis: 30%;
+    flex-basis: 35%;
 }
 header .header_image{
-    flex-basis: 70%;
+    flex-basis: 65%;
 }
 
 header .header_image img{
@@ -65,6 +72,9 @@ header .header_image img{
 
 header #login{
     position: absolute;
+    color: white;
+    font-size: 2rem;
+    margin: 20px 20px;
 }
 
 header .header_text{
@@ -77,16 +87,18 @@ header .header_text{
 header .header_text .logo{
     text-decoration: none;
     font-family: "Meow Script", sans-serif;
-    font-size: 3rem;
-    font-weight: lighter;
+    font-size: 2.7rem;
     color: white;
-    margin: 15% 0;
+}
+
+.logo h1{
+    font-weight: normal;
 }
 
 header .header_text span{
     text-transform: uppercase;
     font-size: 1.2rem;
-    margin: 5% 0;
+    margin: 4% 0;
     font-family: "Poppins", sans-serif;
 }
 
@@ -97,31 +109,25 @@ header .button{
     color: white;
     text-transform: uppercase;
     font-size: 1.2rem;
-    margin: 5% 0;
+    margin: 4% 0;
     font-family: "Poppins", sans-serif;
-}
-
-header #login{
-    color: white;
-    font-size: 2rem;
-    margin: 20px 20px;
 }
 
 /* ____________FOOTER____________ */
 
 footer{
     background-color: rgb(51, 69, 81);
+    padding: 3% 4%;
 }
 
 footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5rem;
 }
 
 footer .container div{
-    flex-basis: 20%;
+    flex-basis: 22%;
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -138,7 +144,7 @@ footer .container div span{
 footer .container div p{
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 footer .container div h2{
@@ -148,13 +154,12 @@ footer .container div h2{
     font-size: 2rem;
 }
 
-footer p{
+footer > p{
     justify-self: center;
-    text-align: center;
     color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
+    margin : 40px 0 0 0;
 }
 
 footer p a{
@@ -170,14 +175,15 @@ footer p a{
     justify-content: space-between;
     background-color: rgb(51, 69, 81);
     color: white;
-    padding: 6% 5%;
-    font-family: "poppins", sans-serif;
+    padding: 0 4% 6% 4%;
+    
 }
 
 .about .formule{
     display: flex;
     justify-content: space-between;
     flex-basis: 70%;
+    padding-top: 20px;
 }
 
 .about .formule div{
@@ -208,6 +214,7 @@ footer p a{
     display: flex;
     flex-direction: column;
     text-align: right;
+    padding-top: 50px;
 }
 
 .about .about_text h2{
@@ -234,7 +241,7 @@ footer p a{
 .today_menu {
     background-color: rgb(185,157,125);
     display: flex;
-    padding: 2% 5%;
+    padding: 2% 4%;
 }
 
 .today_menu .today_text{
@@ -243,7 +250,7 @@ footer p a{
     flex-direction: column;
     justify-content: space-evenly;
     color: white;
-    font-family: "Poppins", sans-serif;
+    
     font-weight: lighter;
 
 }
@@ -282,7 +289,7 @@ footer p a{
 
 .today_menu .today_image img{
     width: 45%;
-    height: 550px;
+    aspect-ratio: 0.5;
     object-fit: cover;
     margin: 0 10px;
 }
@@ -304,6 +311,9 @@ footer p a{
 }
 
 /*____________PLAT aleatoire________*/
+.plat_alea{
+    background-color: white;
+}
 
 .alea_text{
     text-align: center;
@@ -312,9 +322,9 @@ footer p a{
 
 .alea_text h2{
     color: rgb(51, 69, 81);
-    font-family: "poppins", sans-serif;
+    
     font-size: 2rem;
-    margin: 20px 0;
+    padding: 20px 0;
     font-weight: normal;
 }
 
@@ -325,7 +335,7 @@ footer p a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
-    font-family: "poppins", sans-serif;
+    
 }
 
 .plat_image{

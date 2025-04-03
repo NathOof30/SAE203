@@ -4,6 +4,8 @@ require_once 'application/helpers/queries/menu.php';
 
 $plats = plats_aleatoires(6);
 
-echo $blade->run('index',compact('plats'));
+$menu = prochainMenu();
+
+echo $blade->run('index',compact('plats', 'menu'));
 
 ?>

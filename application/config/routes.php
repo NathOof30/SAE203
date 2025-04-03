@@ -14,10 +14,18 @@ require_once 'application/core/routing.php';
 // Seule l'existence des paramètres est testée, pas leur valeur (c'est donc à vous de le faire)
 
 add_page('index');
+add_page('connexion');
 add_page('inscription');
+add_page('carte');
+add_page('menu');
+add_page('perso');
+add_page('apropos');
 
 //add_action('connexion', ['email' => POST, 'mdp' => POST]);
 add_action('deconnexion');
 add_action('inscription');
+add_action("connexion");
+add_action('selection');
+add_action('supprimerSelection');
 
 ?>

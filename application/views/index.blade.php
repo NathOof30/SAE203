@@ -34,20 +34,22 @@
     </section>
 
     <section class="today_menu">
+ 
         <div class="today_text">
             <h2>AU MENU AUJOURD'HUI</h2>
             <h3>PLAT A</h3>
-            <p>Beauf bourguignon</p>
+            <p>{{$menu[0]['description']}}</p>
             <h3>PLAT B</h3>
-            <p>Gigot de ta mère en slip de bain aux épices étoilées sans monnaie</p>
+            <p>{{$menu[1]['description']}}</p>
             <div class="today_bouton">
-                <a href="#">CONSULTER LES MENUS</a>
+                <a href="{{URL_INDEX}}?page=menu">CONSULTER LES MENUS</a>
             </div>
         </div>
         <div class="today_image">
-            <img id="img1" src="{{URL_IMG}}./interieur.jpg" alt="hehe">
-            <img id="img2" src="{{URL_IMG}}./interieur.jpg" alt="hehe">
+            <img id="img1" src="{{URL_IMG . $menu[0]['image']}}" alt="{{$menu_plat['description']}}">
+            <img id="img2" src="{{URL_IMG . $menu[1]['image']}}" alt="hehe">
         </div>
+
 
     </section>
 
@@ -55,7 +57,7 @@
         <div class="alea_text">
             <h2>Nos plats</h2>
             <div>
-                <a href="#">CONSULTER LA CARTE complète</a>
+                <a href="{{URL_INDEX}}?page=carte">CONSULTER LA CARTE complète</a>
             </div>
         </div>
         <div class="plat_image">

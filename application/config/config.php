@@ -27,7 +27,7 @@ define('DB_PASSWORD', '');
 //       URL dans le navigateur : http://127.0.0.1:8000/
 // - hébergement sur la machine sae : 
 //       URL dans le navigateur : http://172.31.144.142/~groupe_xx/
-define('BASE_URL',"http://localhost/SAE203/sujet/");
+define('BASE_URL',"http://localhost/SAE_203/");
 
 //Rien à changer au dessous de cette ligne
 

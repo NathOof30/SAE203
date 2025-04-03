@@ -16,7 +16,10 @@ require_once 'application/helpers/date.php';
  */
 function prochainMenu(){
   $pdo = get_pdo();
-
+  $sql = "SELECT * FROM plat JOIN menu ON plat.id = menu.idPlat JOIN repas ON menu.idRepas = repas.id WHERE repas.date = CURRENT_DATE()";
+  $query = $pdo->prepare($sql);
+  $query->execute();
+  return $query->fetchall();
 }
 
 

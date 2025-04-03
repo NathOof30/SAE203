@@ -1,11 +1,142 @@
-form{
+.formulaire {
     display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    background-color: rgb(51,69,81);
-    margin: 0 auto;
+    justify-content: center;
+    background-color :rgb(51,69,81);
+    padding: 5% 5%;
 }
 
-body{
+.tuto{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.tuto > div{
+    width: 100%;
+}
+
+.tuto > div > p{
+    margin-bottom: 40px;
+    font-weight:200;
+}
+
+.gros_chiffre{
+    width: 80px;
+    height: 80px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    border: 1px solid rgb(185,157,125);
+    border-radius: 100%;
+    margin : auto auto;
+    margin-bottom: 40px;
+}
+
+.gros_chiffre p{
+    margin-top: 9px;
+}
+
+.formulaire .form{
+    margin: 0 20px;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.formulaire form span{
+    font-size: 1.5rem;
+    position : relative;
+    top: -40px;
     background-color: rgb(51,69,81);
+}
+
+.formulaire form{
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 25px;
+}
+
+#form_inscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.formulaire form input{
+    width: 90%;
+    height: 35px;
+    margin-bottom: 30px;
+}
+
+.formulaire form input{
+    width: 90%;
+    height: 35px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.formulaire form button{
+    border: none;
+    background-color: rgb(185,157,125);
+    color: rgb(51,69,81);
+    padding: 10px 20px;
+    margin-bottom: 35px;
+}
+
+.connexion{
+    flex-basis: 35%;
+    color : white;
+    text-align: right;
+}
+
+.connexion h2{
+    margin-bottom: 20px;
+}
+
+.connexion p{
+    font-weight: 200;
+    margin : 10px 0;
+    line-height: 1.5;
+}
+
+.bouton a{
+    text-decoration: none;
+    color: rgb(51,69,81);
+    background-color: rgb(185,157,125);
+    padding: 10px 20px;
+}
+
+.bouton{
+    margin : 30px 0;
+}
+
+/*________asso______*/
+
+.asso_text{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 5% 0 5%;
+    background-color: white;
+}
+
+.asso_text div{
+    flex-basis: 48%;
+}
+
+.asso_text div img{
+    width: 100%;
+    aspect-ratio: 0.5;
+    object-fit: cover;
+    object-position: center;
+}
+
+.asso_text div:nth-child(2){
+    position: relative;
+    top: -110px;
 }

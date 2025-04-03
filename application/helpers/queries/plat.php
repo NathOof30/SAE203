@@ -35,7 +35,11 @@ function plats_aleatoires($nombre){
  */
 function tous_plats_date(){
   $pdo = get_pdo();
-
+  $sql = "SELECT plat.description, plat.image, day(date), monthname(date) FROM plat join repas on repas.id = plat.id group by repas.id;";
+  $query = $pdo->prepare($sql);
+  $query->execute();
+  return $query->fetchAll();
 }
+
 
 ?>
